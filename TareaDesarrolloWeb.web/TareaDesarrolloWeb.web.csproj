@@ -158,10 +158,11 @@
     <Content Include="Views\Index\Index.aspx" />
     <Content Include="Views\Login\Login.aspx" />
     <Content Include="Views\Recuperar Password\Recuperar Password.aspx" />
-    <Content Include="Views\Registrar\Registrar.aspx" />
+    <Content Include="Views\Registrar Usuario\Registrar.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\RegistroController.cs" />
     <Compile Include="Controller\LoginController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Template\Template.Master.cs">
@@ -192,11 +193,11 @@
     <Compile Include="Views\Recuperar Password\Recuperar Password.aspx.designer.cs">
       <DependentUpon>Recuperar Password.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\Registrar\Registrar.aspx.cs">
+    <Compile Include="Views\Registrar Usuario\Registrar.aspx.cs">
       <DependentUpon>Registrar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\Registrar\Registrar.aspx.designer.cs">
+    <Compile Include="Views\Registrar Usuario\Registrar.aspx.designer.cs">
       <DependentUpon>Registrar.aspx</DependentUpon>
     </Compile>
   </ItemGroup>

@@ -43,16 +43,20 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <asp:Label ID="lblCedula" runat="server" Text="Cedula"></asp:Label>
-                        <asp:TextBox ID="TxtCedula" runat="server" CssClass="form-control" placeholder="Ingresar Cedula"></asp:TextBox>
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <asp:Label ID="lblCedula" runat="server" Text="Cedula"></asp:Label>
+                                <asp:TextBox ID="TxtCedula" runat="server" CssClass="form-control" placeholder="Ingresar Cedula"></asp:TextBox>
+                            </div>
+                            <div class="col-md-6">
+                                <asp:Label ID="lblTelefono" runat="server" Text="Telefono"></asp:Label>
+                                <asp:TextBox ID="Txttelefono" runat="server" CssClass="form-control" placeholder="Ingresar Telefono"></asp:TextBox>
+                            </div>
+                        </div>
                     </div>
                     <div class="form-group">
                         <asp:Label ID="lblCorreo" runat="server" Text="Correo"></asp:Label>
                         <asp:TextBox ID="txtCorreo" runat="server" CssClass="form-control" placeholder="Ingresar Email"></asp:TextBox>
-                    </div>
-                    <div class="form-group">
-                        <asp:Label ID="lblTelefono" runat="server" Text="Telefono"></asp:Label>
-                        <asp:TextBox ID="Txttelefono" runat="server" CssClass="form-control" placeholder="Ingresar Telefono"></asp:TextBox>
                     </div>
                     <div class="form-group">
                         <asp:Label ID="lblNickName" runat="server" Text="Nombre de Usuario"></asp:Label>

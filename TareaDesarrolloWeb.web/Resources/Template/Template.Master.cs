@@ -11,7 +11,12 @@ namespace TareaDesarrolloWeb.web.Resources.Template
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
+        }
+        protected void lbSalir_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
+            Response.Redirect("..7../Views/Login/Login.aspx");
         }
     }
 }

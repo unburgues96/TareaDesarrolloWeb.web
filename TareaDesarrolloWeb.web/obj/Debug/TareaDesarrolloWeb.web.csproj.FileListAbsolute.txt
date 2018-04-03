@@ -20,3 +20,13 @@ C:\Users\mig_o\Desktop\TareaDesarrolloWeb.web\TareaDesarrolloWeb.web\bin\Microso
 C:\Users\mig_o\Desktop\TareaDesarrolloWeb.web\TareaDesarrolloWeb.web\bin\TareaDesarrolloWeb.Logica.dll
 C:\Users\mig_o\Desktop\TareaDesarrolloWeb.web\TareaDesarrolloWeb.web\bin\TareaDesarrolloWeb.Logica.pdb
 C:\Users\mig_o\Desktop\TareaDesarrolloWeb.web\TareaDesarrolloWeb.web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Andres Giraldo\Desktop\TareaDesarrolloWeb.web\TareaDesarrolloWeb.web\obj\Debug\TareaDesarrolloWeb.web.csprojResolveAssemblyReference.cache
+C:\Users\Andres Giraldo\Desktop\TareaDesarrolloWeb.web\TareaDesarrolloWeb.web\obj\Debug\TareaDesarrolloWeb.web.dll
+C:\Users\Andres Giraldo\Desktop\TareaDesarrolloWeb.web\TareaDesarrolloWeb.web\obj\Debug\TareaDesarrolloWeb.web.pdb
+C:\Users\Andres Giraldo\Desktop\TareaDesarrolloWeb.web\TareaDesarrolloWeb.web\bin\TareaDesarrolloWeb.web.dll.config
+C:\Users\Andres Giraldo\Desktop\TareaDesarrolloWeb.web\TareaDesarrolloWeb.web\bin\TareaDesarrolloWeb.web.dll
+C:\Users\Andres Giraldo\Desktop\TareaDesarrolloWeb.web\TareaDesarrolloWeb.web\bin\TareaDesarrolloWeb.web.pdb
+C:\Users\Andres Giraldo\Desktop\TareaDesarrolloWeb.web\TareaDesarrolloWeb.web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Andres Giraldo\Desktop\TareaDesarrolloWeb.web\TareaDesarrolloWeb.web\bin\TareaDesarrolloWeb.Logica.dll
+C:\Users\Andres Giraldo\Desktop\TareaDesarrolloWeb.web\TareaDesarrolloWeb.web\bin\TareaDesarrolloWeb.Logica.pdb
+C:\Users\Andres Giraldo\Desktop\TareaDesarrolloWeb.web\TareaDesarrolloWeb.web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml

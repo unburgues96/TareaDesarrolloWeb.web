@@ -42,13 +42,13 @@
           <div class="form-group">
             <div class="form-check">
               <label class="form-check-label"/>
-                <asp:CheckBox ID="chkRecordar" runat="server" Text="Recordar Contraseña" />
+                <asp:CheckBox ID="chkRecordar" runat="server" Text="Recordar Usuario" />
             </div>
           </div>
           <asp:Button ID="btnAceptar" runat="server" CssClass="btn btn-primary btn-block" Text="Aceptar" OnClick="btnAceptar_Click" />
         </form>
         <div class="text-center">
-          <a class="d-block small mt-3" href="../Registrar/Registrar.aspx">Registrar Cuenta</a>
+          <a class="d-block small mt-3" href="../Registrar Usuario/Registrar.aspx">Registrar Cuenta</a>
           <a class="d-block small" href="../Recuperar Password/Recuperar Password.aspx">Olvido su contraseña?</a>
         </div>
       </div>

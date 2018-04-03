@@ -1,5 +1,4 @@
 ﻿using System;
-
 using System.Data;
 using System.Data.SqlClient;
 
@@ -31,17 +30,17 @@ namespace TareaDesarrolloWeb.Logica.BL
                 _SqlConnection = new SqlConnection(stConexion);
                 _SqlConnection.Open();
 
-                _SqlCommand = new SqlCommand("sp_IniciodeSesion",_SqlConnection);
+                _SqlCommand = new SqlCommand("sp_IniciodeSesion", _SqlConnection);
                 _SqlCommand.CommandType = CommandType.StoredProcedure;
 
-                _SqlCommand.Parameters.Add(new SqlParameter("@UserName", obclsUsuarios.stLogin));
-                _SqlCommand.Parameters.Add(new SqlParameter("@Password", obclsUsuarios.stPassword));
+                _SqlCommand.Parameters.Add(new SqlParameter("@UserName", obclsUsuarios.StLogin));
+                _SqlCommand.Parameters.Add(new SqlParameter("@PassWord", obclsUsuarios.StPassword));
                 _SqlCommand.ExecuteNonQuery();
 
                 _SqlDataAdapter = new SqlDataAdapter(_SqlCommand);
                 _SqlDataAdapter.Fill(dsConsulta);
 
-                if (dsConsulta.Equals(null))
+                if (dsConsulta.Tables[0].Rows.Count == 0)
                 {
                     return false;
                 }
@@ -56,7 +55,7 @@ namespace TareaDesarrolloWeb.Logica.BL
                 throw ew;
             }
             finally { _SqlConnection.Close(); }
-
         }
     }
 }
+

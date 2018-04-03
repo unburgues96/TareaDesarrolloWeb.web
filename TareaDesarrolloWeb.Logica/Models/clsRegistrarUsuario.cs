@@ -15,6 +15,6 @@ namespace TareaDesarrolloWeb.Logica.Models
         public string StUserName { get; set; }
         public string StContraseña { get; set; }
         public long LgCedula { get; set; }
-        public int InCodigoPerfil { get; set; }
+        public int InCodigoPerfil { get; set; } //Prueba
     }
 }

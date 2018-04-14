@@ -9,11 +9,11 @@ namespace TareaDesarrolloWeb.web.Controller
         /// </summary>
         /// <param name="obclsUsuarios">Objeto Usuario</param>
         /// <returns>Confirmacion</returns>
-        public String setRegistrarUsuarioController(Logica.Models.clsRegistrarUsuario obclsRegistroUsuarios, int inOpcion) {
+        public String setRegistrarUsuarioController(Logica.Models.clsRegistrarUsuario obclsRegistroUsuariosModels, int inOpcion) {
             try
             {
-                Logica.BL.ClsRegistroUsuario clsRegistroUsuario = new Logica.BL.ClsRegistroUsuario();
-                return clsRegistroUsuario.setRegistroUsuario(obclsRegistroUsuarios, inOpcion);
+                Logica.BL.ClsRegistroUsuario obclsRegistroUsuario = new Logica.BL.ClsRegistroUsuario();
+                return obclsRegistroUsuario.setRegistroUsuario(obclsRegistroUsuariosModels, inOpcion);
 
             }catch(Exception ew)
             {

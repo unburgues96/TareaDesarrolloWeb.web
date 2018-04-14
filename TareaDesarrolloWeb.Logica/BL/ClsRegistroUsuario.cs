@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
-using TareaDesarrolloWeb.Logica.Models;
 
 namespace TareaDesarrolloWeb.Logica.BL
 {
@@ -12,7 +11,7 @@ namespace TareaDesarrolloWeb.Logica.BL
         SqlDataAdapter _SqlDataAdapter = null;//me permite adaptar un conjunto de datos sql
         SqlParameter _SqlParameter = null;
 
-        public String setRegistroUsuario(Models.clsRegistrarUsuario obclsRegistroUsuarios, int inOpcion)
+        public string setRegistroUsuario(Models.clsRegistrarUsuario obclsRegistroUsuarios, int inOpcion)
         {
             try
             { 
@@ -29,13 +28,14 @@ namespace TareaDesarrolloWeb.Logica.BL
                 _SqlCommand.Parameters.Add(new SqlParameter("@UserName", obclsRegistroUsuarios.StUserName));
                 _SqlCommand.Parameters.Add(new SqlParameter("@Contraseña", obclsRegistroUsuarios.StContraseña));
                 _SqlCommand.Parameters.Add(new SqlParameter("@Cedula", obclsRegistroUsuarios.LgCedula));
-                _SqlCommand.Parameters.Add(new SqlParameter("@CodPerfil", obclsRegistroUsuarios.InCodigoPerfil));
+                _SqlCommand.Parameters.Add(new SqlParameter("@CodPerfil",inOpcion));
 
-                _SqlParameter = new SqlParameter();
-                _SqlParameter.ParameterName = "@cMensaje";
-                _SqlParameter.Direction = ParameterDirection.Output;
-                _SqlParameter.SqlDbType = SqlDbType.VarChar;
-                _SqlParameter.Size = 50;
+                    _SqlParameter = new SqlParameter();
+
+                    _SqlParameter.ParameterName = "@cMensaje";
+                    _SqlParameter.Direction = ParameterDirection.Output;
+                    _SqlParameter.SqlDbType = SqlDbType.VarChar;
+                    _SqlParameter.Size = 50;
 
                 _SqlCommand.Parameters.Add(_SqlParameter);
 

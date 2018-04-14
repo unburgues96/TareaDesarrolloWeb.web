@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TareaDesarrolloWeb.Logica.Models
+﻿namespace TareaDesarrolloWeb.Logica.Models
 {
     public class clsUsuarios
     {

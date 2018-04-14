@@ -22,13 +22,13 @@ namespace TareaDesarrolloWeb.web.Views.Recuperar_Password {
         protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
         
         /// <summary>
-        /// Control txtIngresarEmail.
+        /// Control txtIngresarUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIngresarEmail;
+        protected global::System.Web.UI.WebControls.TextBox txtIngresarUsuario;
         
         /// <summary>
         /// Control btnRecuperar.

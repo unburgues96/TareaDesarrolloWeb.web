@@ -31,22 +31,22 @@
             <div class="card-body">
                 <div class="text-center mt-4 mb-5">
                     <h4>Olvido su contraseña?</h4>
-                    <p>Ingrese su Nombre de Usuario para recuperar o crear una contraseña nueva.</p>
+                    <p>Ingrese su Nombre de Usuario para recuperar su contraseña.</p>
                 </div>
                 <form id="Form1" runat="server">
                     <div class="form-group">
-                        <asp:TextBox ID="txtIngresarEmail" runat="server" CssClass="form-control" placeholder="Ingresa tu nombre" />
+                        <asp:TextBox ID="txtIngresarUsuario" runat="server" CssClass="form-control" placeholder="Ingresa tu nombre" />
                     </div>
-                    <asp:Button ID="btnRecuperar" runat="server" CssClass="btn btn-primary btn-block" Text="Recuperar Contraseña" OnClick="btnRecuperar_Click"/>
+                    <asp:Button ID="btnRecuperar" runat="server" CssClass="btn btn-primary btn-block" Text="Recuperar Contraseña" OnClick="btnRecuperar_Click" />
                 </form>
                 <div class="text-center">
-                    <a class="d-block small mt-3" href="../Registrar/Registrar.aspx">Crear Cuenta</a>
+                    <a class="d-block small mt-3" href="../Registrar Usuario/Registrar.aspx">Crear Cuenta</a>
                     <a class="d-block small" href="../Login/Login.aspx">Ingresar</a>
                 </div>
             </div>
         </div>
     </div>
-    
+
 </body>
 
 </html>

@@ -7,54 +7,81 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace TareaDesarrolloWeb.web.Resources.Template {
+namespace TareaDesarrolloWeb.web.Views.Inicio {
     
     
-    public partial class Template {
+    public partial class Inicio {
         
         /// <summary>
-        /// Control btnVerInicio.
+        /// Control txtPublicacion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVerInicio;
+        protected global::System.Web.UI.WebControls.TextBox txtPublicacion;
         
         /// <summary>
-        /// Control btnVerPerfil.
+        /// Control btnPublicar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVerPerfil;
+        protected global::System.Web.UI.WebControls.Button btnPublicar;
         
         /// <summary>
-        /// Control btnChat.
+        /// Control txtBuscar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnChat;
+        protected global::System.Web.UI.WebControls.TextBox txtBuscar;
         
         /// <summary>
-        /// Control btnSalir.
+        /// Control dblCategoria.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSalir;
+        protected global::System.Web.UI.WebControls.DropDownList dblCategoria;
         
         /// <summary>
-        /// Control Contenedor.
+        /// Control dplTiempo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Contenedor;
+        protected global::System.Web.UI.WebControls.DropDownList dplTiempo;
+        
+        /// <summary>
+        /// Control dplElectrodomesticos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dplElectrodomesticos;
+        
+        /// <summary>
+        /// Control Label1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
+        /// Control lblNombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNombre;
     }
 }

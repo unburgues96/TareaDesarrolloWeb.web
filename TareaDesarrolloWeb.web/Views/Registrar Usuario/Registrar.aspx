@@ -26,6 +26,7 @@
 </head>
 <body class="bg-dark">
     <div class="container">
+         <asp:Label ID="lblOpcion" runat="server"></asp:Label>
         <div class="card card-register mx-auto mt-5">
             <div class="card-header">Registrar Cuenta</div>
             <div class="card-body">

@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using static System.Net.WebRequestMethods;
 // gihih
 namespace TareaDesarrolloWeb.web.Views.Login
 {
@@ -12,10 +7,12 @@ namespace TareaDesarrolloWeb.web.Views.Login
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-        if (!IsPostBack)
+            //!IsPostBack = Primera vez que carga pagina
+            if (!IsPostBack)
             {
-                if (Request.Cookies["Usuario"] != null) {
-                    txtUser.Text = Request.Cookies["Usuario"].Value.ToString();
+                if (Request.Cookies["CookieUsuario"] != null)
+                {
+                    txtUser.Text = Request.Cookies["CookieUsuario"].Value.ToString();
                 }
             }
         }
@@ -44,25 +41,25 @@ namespace TareaDesarrolloWeb.web.Views.Login
                 {
                     if (chkRecordar.Checked)
                     {
-                        HttpCookie CookieUsuario = new HttpCookie("Usuario", txtUser.Text);
-                        CookieUsuario.Expires = DateTime.Now.AddDays(2);
-                        Response.Cookies.Add(CookieUsuario);
+                        //Creo el objeto cookie
+                        HttpCookie Cookie = new HttpCookie("CookieUsuario", txtUser.Text);
+                        //Defino tiempo de vida
+                        Cookie.Expires = DateTime.Now.AddDays(2);
+                        //Agrego a la colecion de cookies
+                        Response.Cookies.Add(Cookie);
                     }
                     else
                     {
-                        HttpCookie CookieUsuario = new HttpCookie("Usuario", txtUser.Text);
-                        CookieUsuario.Expires = DateTime.Now.AddDays(-1);
-                        Response.Cookies.Add(CookieUsuario);
+                        HttpCookie Cookie = new HttpCookie("CookieUsuario", txtUser.Text);
+                        //Cookie expira ayer (Fecha de hoy menos 1 dia)
+                        Cookie.Expires = DateTime.Now.AddDays(-1);
+                        Response.Cookies.Add(Cookie);
                     }
-
-                    ViewState["viewLogin"] = txtUser.Text;
-                    ViewState["viewPassword"] = txtPassword.Text;
-
+                    Session["SessionUser"] = txtUser.Text;
                     Response.Redirect("../Index/Index.aspx");//Redirecciono
                 }
                 else
                     throw new Exception("Usuario o password incorrectos");
-
             }
             catch (Exception ex)
             {

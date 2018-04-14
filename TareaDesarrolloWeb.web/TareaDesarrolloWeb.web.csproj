@@ -155,13 +155,20 @@
     <Content Include="vendor\jquery\jquery.min.js" />
     <Content Include="vendor\jquery\jquery.slim.js" />
     <Content Include="vendor\jquery\jquery.slim.min.js" />
+    <Content Include="Views\Chat\Chat.aspx" />
     <Content Include="Views\Index\Index.aspx" />
+    <Content Include="Views\Inicio\Inicio.aspx" />
     <Content Include="Views\Login\Login.aspx" />
+    <Content Include="Views\Perfil\Perfil.aspx" />
     <Content Include="Views\Recuperar Password\Recuperar Password.aspx" />
     <Content Include="Views\Registrar Usuario\Registrar.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\RecuperarContraseñaController.cs" />
+    <Compile Include="Controller\PerfilController.cs" />
     <Compile Include="Controller\RegistroController.cs" />
     <Compile Include="Controller\LoginController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -172,6 +179,13 @@
     <Compile Include="Resources\Template\Template.Master.designer.cs">
       <DependentUpon>Template.Master</DependentUpon>
     </Compile>
+    <Compile Include="Views\Chat\Chat.aspx.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Chat\Chat.aspx.designer.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Index\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -179,12 +193,26 @@
     <Compile Include="Views\Index\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Inicio\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Inicio\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Login\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Login\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Perfil\Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Perfil\Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Recuperar Password\Recuperar Password.aspx.cs">
       <DependentUpon>Recuperar Password.aspx</DependentUpon>
@@ -201,7 +229,9 @@
       <DependentUpon>Registrar.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\Images\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TareaDesarrolloWeb.Logica\TareaDesarrolloWeb.Logica.csproj">
       <Project>{2cee3f7c-d5c3-48b5-abf7-b4d13b1f75ef}</Project>

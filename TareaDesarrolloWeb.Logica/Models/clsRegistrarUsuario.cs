@@ -1,10 +1,4 @@
-﻿    using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TareaDesarrolloWeb.Logica.Models
+﻿namespace TareaDesarrolloWeb.Logica.Models
 {
     public class clsRegistrarUsuario
     {
@@ -15,6 +9,6 @@ namespace TareaDesarrolloWeb.Logica.Models
         public string StUserName { get; set; }
         public string StContraseña { get; set; }
         public long LgCedula { get; set; }
-        public int InCodigoPerfil { get; set; } //Prueba
+         //Prueba
     }
 }

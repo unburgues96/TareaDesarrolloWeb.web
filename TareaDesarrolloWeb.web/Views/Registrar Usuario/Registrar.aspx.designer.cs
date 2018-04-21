@@ -49,6 +49,15 @@ namespace TareaDesarrolloWeb.web.Views.Registrar {
         protected global::System.Web.UI.WebControls.TextBox txtNombre;
         
         /// <summary>
+        /// Control rfvNombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNombre;
+        
+        /// <summary>
         /// Control lblInputLastName.
         /// </summary>
         /// <remarks>
@@ -65,6 +74,15 @@ namespace TareaDesarrolloWeb.web.Views.Registrar {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtLastName;
+        
+        /// <summary>
+        /// Control rfvApellido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvApellido;
         
         /// <summary>
         /// Control lblCedula.
@@ -85,6 +103,15 @@ namespace TareaDesarrolloWeb.web.Views.Registrar {
         protected global::System.Web.UI.WebControls.TextBox TxtCedula;
         
         /// <summary>
+        /// Control rfvCedula.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCedula;
+        
+        /// <summary>
         /// Control lblTelefono.
         /// </summary>
         /// <remarks>
@@ -101,6 +128,15 @@ namespace TareaDesarrolloWeb.web.Views.Registrar {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Txttelefono;
+        
+        /// <summary>
+        /// Control rfvTelefono.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTelefono;
         
         /// <summary>
         /// Control lblCorreo.
@@ -121,6 +157,15 @@ namespace TareaDesarrolloWeb.web.Views.Registrar {
         protected global::System.Web.UI.WebControls.TextBox txtCorreo;
         
         /// <summary>
+        /// Control rfvEmail.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmail;
+        
+        /// <summary>
         /// Control lblNickName.
         /// </summary>
         /// <remarks>
@@ -139,6 +184,15 @@ namespace TareaDesarrolloWeb.web.Views.Registrar {
         protected global::System.Web.UI.WebControls.TextBox TxtNickName;
         
         /// <summary>
+        /// Control rfvUserName.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvUserName;
+        
+        /// <summary>
         /// Control lblContraseña.
         /// </summary>
         /// <remarks>
@@ -155,6 +209,15 @@ namespace TareaDesarrolloWeb.web.Views.Registrar {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtContraseña;
+        
+        /// <summary>
+        /// Control rfvContraseña.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvContraseña;
         
         /// <summary>
         /// Control btnRegistrar.

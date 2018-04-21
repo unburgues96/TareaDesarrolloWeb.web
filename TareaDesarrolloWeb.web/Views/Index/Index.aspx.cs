@@ -12,6 +12,8 @@ namespace TareaDesarrolloWeb.web.Views.Index
                 {
                     Response.Redirect("../Login/Login.aspx");
                 }
+                string stUss = Session["SessionUser"].ToString();
+                imgCuenta.ImageUrl = "~/Images Perfil/" + stUss + ".jpg";
             }
         }
     }

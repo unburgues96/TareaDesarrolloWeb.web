@@ -58,7 +58,7 @@
                     <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
                         <a class="nav-link" href="#">
                             <i class="fa fa-fw fa-book"></i>
-                            <asp:Button runat="server" ID="btnChat" class="nav-link-text" CssClass="btn btn-secondary" Text="Chat" OnClick="btnChat_Click"/>
+                            <asp:Button runat="server" ID="btnChat" class="nav-link-text" CssClass="btn btn-secondary" Text="Chat" OnClick="btnChat_Click" />
                         </a>
                     </li>
                 </ul>

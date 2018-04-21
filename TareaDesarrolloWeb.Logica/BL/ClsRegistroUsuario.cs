@@ -53,6 +53,40 @@ namespace TareaDesarrolloWeb.Logica.BL
             finally { _SqlConnection.Close(); }
         }
 
+        public string setImagenUsuario(Models.clsRegistrarUsuario obclsRegistroUsuarios)
+        {
+            try
+            {
+                _SqlConnection = new SqlConnection(stConexion);
+                _SqlConnection.Open();
+
+                _SqlCommand = new SqlCommand("sp_AgregarImagen", _SqlConnection);
+                _SqlCommand.CommandType = CommandType.StoredProcedure;
+
+                _SqlCommand.Parameters.Add(new SqlParameter("@Imagen", obclsRegistroUsuarios.stImagen));
+                _SqlCommand.Parameters.Add(new SqlParameter("@UserName", obclsRegistroUsuarios.StUserName));
+
+                _SqlParameter = new SqlParameter();
+
+                _SqlParameter.ParameterName = "@cMensaje";
+                _SqlParameter.Direction = ParameterDirection.Output;
+                _SqlParameter.SqlDbType = SqlDbType.VarChar;
+                _SqlParameter.Size = 50;
+
+                _SqlCommand.Parameters.Add(_SqlParameter);
+
+                _SqlCommand.ExecuteNonQuery();
+
+                return _SqlParameter.Value.ToString();
+            }
+            catch (Exception ew)
+            {
+                throw ew;
+            }
+            finally { _SqlConnection.Close(); }
+        }
+
+
         String stConexion = String.Empty;//Cadena de conexion
 
         public ClsRegistroUsuario()

@@ -26,7 +26,6 @@
 </head>
 <body class="bg-dark">
     <div class="container">
-        <asp:Label ID="lblOpcion" runat="server"></asp:Label>
         <div class="card card-register mx-auto mt-5">
             <div class="card-header">Registrar Cuenta</div>
             <div class="card-body">
@@ -36,45 +35,34 @@
                             <div class="col-md-6">
                                 <asp:Label ID="lblInputName" runat="server" Text="Nombre"></asp:Label>
                                 <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" placeholder="Ingresar Nombre"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="txtNombre" ValidationGroup="Registrar_Cuenta"></asp:RequiredFieldValidator>
                             </div>
                             <div class="col-md-6">
                                 <asp:Label ID="lblInputLastName" runat="server" Text="Apellido"></asp:Label>
                                 <asp:TextBox ID="txtLastName" runat="server" CssClass="form-control" placeholder="Ingresar Apellido"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvApellido" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="txtLastName" ValidationGroup="Registrar_Cuenta"></asp:RequiredFieldValidator>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="form-row">
-                            <div class="col-md-6">
-                                <asp:Label ID="lblCedula" runat="server" Text="Cedula"></asp:Label>
-                                <asp:TextBox ID="TxtCedula" runat="server" CssClass="form-control" placeholder="Ingresar Cedula"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvCedula" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="TxtCedula" ValidationGroup="Registrar_Cuenta"></asp:RequiredFieldValidator>
-                            </div>
-                            <div class="col-md-6">
-                                <asp:Label ID="lblTelefono" runat="server" Text="Telefono"></asp:Label>
-                                <asp:TextBox ID="Txttelefono" runat="server" CssClass="form-control" placeholder="Ingresar Telefono"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvTelefono" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="Txttelefono" ValidationGroup="Registrar_Cuenta"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
+                        <asp:Label ID="lblCedula" runat="server" Text="Cedula"></asp:Label>
+                        <asp:TextBox ID="TxtCedula" runat="server" CssClass="form-control" placeholder="Ingresar Cedula"></asp:TextBox>
                     </div>
                     <div class="form-group">
                         <asp:Label ID="lblCorreo" runat="server" Text="Correo"></asp:Label>
-                        <asp:TextBox ID="txtCorreo" runat="server" TextMode="Email" CssClass="form-control" placeholder="Ingresar Email"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="txtCorreo" ValidationGroup="Registrar_Cuenta"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txtCorreo" runat="server" CssClass="form-control" placeholder="Ingresar Email"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <asp:Label ID="lblTelefono" runat="server" Text="Telefono"></asp:Label>
+                        <asp:TextBox ID="Txttelefono" runat="server" CssClass="form-control" placeholder="Ingresar Telefono"></asp:TextBox>
                     </div>
                     <div class="form-group">
                         <asp:Label ID="lblNickName" runat="server" Text="Nombre de Usuario"></asp:Label>
                         <asp:TextBox ID="TxtNickName" runat="server" CssClass="form-control" placeholder="Ingresar Nombre de Usuario"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvUserName" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="TxtNickName" ValidationGroup="Registrar_Cuenta"></asp:RequiredFieldValidator>
                     </div>
                     <div class="form-group">
                         <asp:Label ID="lblContraseña" runat="server" Text="Contraseña"></asp:Label>
                         <asp:TextBox ID="txtContraseña" runat="server" CssClass="form-control" placeholder="Ingresar Contraseña" TextMode="Password"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvContraseña" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="txtContraseña" ValidationGroup="Registrar_Cuenta"></asp:RequiredFieldValidator>
                     </div>
-                    <asp:Button ID="btnRegistrar" runat="server" CssClass="btn btn-primary btn-block" Text="Registrar" ValidationGroup="Registrar_Cuenta" OnClick="btnRegistrar_Click" />
+                    <asp:Button ID="btnRegistrar" runat="server" CssClass="btn btn-primary btn-block" Text="Registrar" OnClick="btnRegistrar_Click" />
                 </form>
                 <div class="text-center">
                     <a class="d-block small mt-3" href="../Login/Login.aspx">Iniciar Sesion</a>

@@ -43,11 +43,13 @@
   <ItemGroup>
     <Compile Include="BL\clsConexion.cs" />
     <Compile Include="BL\ClsGeneral.cs" />
+    <Compile Include="BL\ClsInicio.cs" />
     <Compile Include="BL\ClsPerfil.cs" />
     <Compile Include="BL\ClsRecuperarContraseña.cs" />
     <Compile Include="BL\ClsRegistroUsuario.cs" />
     <Compile Include="BL\clsUsuarios.cs" />
     <Compile Include="Models\ClsCorreo.cs" />
+    <Compile Include="Models\clsInicio.cs" />
     <Compile Include="Models\ClsPerfil.cs" />
     <Compile Include="Models\clsRegistrarUsuario.cs" />
     <Compile Include="Models\clsUsuarios.cs" />

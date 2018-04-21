@@ -167,6 +167,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\ImagenPerfilController.cs" />
+    <Compile Include="Controller\ImagenPublicacionController.cs" />
     <Compile Include="Controller\RecuperarContraseñaController.cs" />
     <Compile Include="Controller\PerfilController.cs" />
     <Compile Include="Controller\RegistroController.cs" />
@@ -230,7 +232,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Images Perfil\" />
+    <Folder Include="Images Publicacion\" />
     <Folder Include="Resources\Images\" />
+    <Folder Include="tmp\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TareaDesarrolloWeb.Logica\TareaDesarrolloWeb.Logica.csproj">

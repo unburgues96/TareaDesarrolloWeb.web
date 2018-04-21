@@ -8,7 +8,11 @@ namespace TareaDesarrolloWeb.web.Resources.Template
         {
             if (!IsPostBack)
             {
-                if (Session["SessionUser"] == null)
+                if (Session["SessionUser"] != null)
+                {
+
+                }
+                else
                 {
                     Response.Redirect("../../Views/Login/Login.aspx");
                 }

@@ -9,6 +9,7 @@
         public string StUserName { get; set; }
         public string StContraseña { get; set; }
         public long LgCedula { get; set; }
-         //Prueba
+        public string stImagen { get; set; }
+                                           //Prueba
     }
 }

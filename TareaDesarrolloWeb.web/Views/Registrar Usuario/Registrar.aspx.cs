@@ -42,7 +42,7 @@ namespace TareaDesarrolloWeb.web.Views.Registrar
                 //Instancio Controlador
                 Controller.RegistroController obRegistroController = new Controller.RegistroController();
                 if (string.IsNullOrEmpty(lblOpcion.Text)) lblOpcion.Text = "2";
-                ClientScript.RegisterStartupScript(this.GetType(), "Mesaje", "<Script> swal('Mensaje', '" + obRegistroController.setRegistrarUsuarioController(obclsRegistarUsuario,Convert.ToInt32(lblOpcion.Text)) + "!', 'success')</Script>");
+                ClientScript.RegisterStartupScript(this.GetType(), "Mesaje", "<Script> swal('Mensaje', '" + obRegistroController.setRegistrarUsuarioController(obclsRegistarUsuario,Convert.ToInt32(lblOpcion.Text)) + "!', 'warning')</Script>");
             }
             catch (Exception ex)
             {

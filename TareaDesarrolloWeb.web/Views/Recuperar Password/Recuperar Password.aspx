@@ -36,8 +36,9 @@
                 <form id="Form1" runat="server">
                     <div class="form-group">
                         <asp:TextBox ID="txtIngresarUsuario" runat="server" CssClass="form-control" placeholder="Ingresa tu nombre" />
+                        <asp:RequiredFieldValidator ID="rfvIngresasUss" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="txtIngresarUsuario" ValidationGroup="ValidarUss"></asp:RequiredFieldValidator>
                     </div>
-                    <asp:Button ID="btnRecuperar" runat="server" CssClass="btn btn-primary btn-block" Text="Recuperar Contraseña" OnClick="btnRecuperar_Click" />
+                    <asp:Button ID="btnRecuperar" runat="server" CssClass="btn btn-primary btn-block" Text="Recuperar Contraseña" ValidationGroup="ValidarUss" OnClick="btnRecuperar_Click" />
                 </form>
                 <div class="text-center">
                     <a class="d-block small mt-3" href="../Registrar Usuario/Registrar.aspx">Crear Cuenta</a>

@@ -11,10 +11,9 @@
                 <br />
             <asp:TextBox runat="server" ID="txtPublicacion" CssClass="form-control" placeholder="Escribe algo..."></asp:TextBox>
             <a class="nav-link" href="#">
-                <i class="fa fa-fw fa-camera"></i>
-                <span class="nav-link-text"></span>
-                <asp:Button runat="server" ID="btnPublicar" CssClass="form-control-sm" Text="Publicar" OnClick="btnPublicar_Click"></asp:Button>
+                <asp:FileUpload runat="server" ID="imgPublicacion" CssClass="form-control"></asp:FileUpload>
             </a>
+            <asp:Button runat="server" ID="btnPublicar" CssClass="btn btn-outline-success" Text="Publicar" OnClick="btnPublicar_Click" />
         </div>
         <hr class="mt-0">
         <div class="col-md-7">
@@ -57,11 +56,12 @@
             <!-- Example Social Card-->
             <div class="card mb-3">
                 <a href="#">
-                    <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=610" alt="">
+                    <asp:Image runat="server" Height="470px" Width="470px" ID="iPublicacion" ImageUrl="https://unsplash.it/700/450?image=610" />
                 </a>
                 <div class="card-body">
-                    <asp:Label runat="server" ID="Label1" Text="Nombre de Usuario"></asp:Label>
-                    <p class="card-text small">Texto de descripcion del articulo</p>
+                    <asp:Label runat="server" ID="lblNombreUssPublicacion" Font-Italic="true" Font-Size="XX-Large"></asp:Label>
+                    <br />
+                    <asp:Label runat="server" ID="lblDescripcionArticulo"></asp:Label>
                 </div>
                 <hr class="my-0">
                 <div class="card-body py-2 small">

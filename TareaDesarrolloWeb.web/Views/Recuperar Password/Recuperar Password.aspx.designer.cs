@@ -31,6 +31,15 @@ namespace TareaDesarrolloWeb.web.Views.Recuperar_Password {
         protected global::System.Web.UI.WebControls.TextBox txtIngresarUsuario;
         
         /// <summary>
+        /// Control rfvIngresasUss.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvIngresasUss;
+        
+        /// <summary>
         /// Control btnRecuperar.
         /// </summary>
         /// <remarks>
